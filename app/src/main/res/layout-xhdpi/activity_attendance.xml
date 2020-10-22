@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="@string/mainpagetxt1"
+        android:textColor="#ffffff" />
+
+    <com.timqi.sectorprogressview.ColorfulRingProgressView
+        android:id="@+id/crpv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:bgColor="@color/background"
+        app:fgColorEnd="@color/colorAccent"
+        app:fgColorStart="@color/colorAccent"
+        app:startAngle="0"
+        app:strokeWidth="21dp" />
+
+    <TextView
+        android:id="@+id/percetxtap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="72dp"
+        android:text="65%"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/attendanceimg"
+        android:layout_width="331dp"
+        android:layout_height="315dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-113dp"
+        android:layout_marginTop="-62dp"
+        app:srcCompat="@drawable/img3" />
+
+    <TextView
+        android:id="@+id/backbutton"
+        android:onClick="tomainpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:paddingTop="5dp"
+        android:drawableStart="@drawable/back_icon_black"
+        android:drawablePadding="4dp"
+        android:text="@string/backtxt"/>
+
+    <Button
+        android:id="@+id/attendancebutt"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="238dp"
+        android:background="@drawable/buttons2"
+        android:drawableStart="@drawable/student"
+        android:drawablePadding="-30dp"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:text="@string/attendancetxt"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/statisticsbutt"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttons"
+        android:drawableStart="@drawable/statsicon"
+        android:drawablePadding="-30dp"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:text="@string/statisticstxt"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departments"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="290dp"
+        android:textStyle="bold|italic"
+        android:textColor="#ffffff"
+        android:elevation="20dp"/>
+
+    <HorizontalScrollView
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="330dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/csedbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/csedtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/ecedbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/ecedtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/mechdbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/mechdtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/bmedbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/bmedtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/eeedbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/eeedtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "/>
+
+            <Button
+                android:id="@+id/civildbutt"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:background="@drawable/buttons"
+                android:padding="4dp"
+                android:elevation="30dp"
+                android:gravity="center"
+                android:text="@string/civildtxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="385dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Statistics">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="@string/mainpagetxt1"
+        android:textColor="#ffffff" />
+
+    <com.timqi.sectorprogressview.ColorfulRingProgressView
+        android:id="@+id/crpv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        app:bgColor="@color/background"
+        app:fgColorEnd="@color/colorAccent"
+        app:fgColorStart="@color/colorAccent"
+        app:startAngle="0"
+        app:strokeWidth="21dp" />
+
+    <TextView
+        android:id="@+id/percetxtap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="72dp"
+        android:text="65%"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/attendanceimg"
+        android:layout_width="331dp"
+        android:layout_height="315dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-114dp"
+        android:layout_marginTop="-83dp"
+        app:srcCompat="@drawable/img3" />
+
+    <Button
+        android:id="@+id/attendancebutt"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/buttons"
+        android:drawableStart="@drawable/student"
+        android:drawablePadding="-30dp"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:text="@string/attendancetxt"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/statisticsbutt"
+        android:layout_width="131dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/buttons2"
+        android:drawableStart="@drawable/statsicon"
+        android:drawablePadding="-30dp"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:text="@string/statisticstxt"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/backbutton"
+        android:onClick="tomainpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:paddingTop="5dp"
+        android:drawableStart="@drawable/back_icon_black"
+        android:drawablePadding="4dp"
+        android:text="@string/backtxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/depttxt"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/csedbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/buttons2"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/csedtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <ProgressBar
+        android:id="@+id/cseprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="123dp"/>
+
+
+    <TextView
+        android:id="@+id/cseatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="344dp"
+        android:text="90%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="370dp"
+        android:text="@string/dash"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/ecedbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="396dp"
+        android:background="@drawable/buttons"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/ecedtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/eceprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="407dp"/>
+
+    <TextView
+        android:id="@+id/eceatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="401dp"
+        android:text="89%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="426dp"
+        android:text="@string/dash"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/mechdbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="453dp"
+        android:background="@drawable/buttons2"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/mechdtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/mechprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="465dp"/>
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="482dp"
+        android:text="@string/dash"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/mechatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="460dp"
+        android:text="79%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/bmedbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="508dp"
+        android:background="@drawable/buttons"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/bmedtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/bmeprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="520dp"/>
+
+    <TextView
+        android:id="@+id/bmeatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="515dp"
+        android:text="70%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="535dp"
+        android:text="@string/dash"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/eeedbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="561dp"
+        android:background="@drawable/buttons2"
+        android:elevation="30dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/eeedtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/eeeprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="572dp"/>
+
+    <TextView
+        android:id="@+id/eeeatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="567dp"
+        android:text="80%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="588dp"
+        android:text="@string/dash"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/civildbutt"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="612dp"
+        android:background="@drawable/buttons"
+        android:elevation="50dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/civildtxt"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ProgressBar
+        android:id="@+id/civilprogressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="625dp"/>
+
+    <TextView
+        android:id="@+id/civilatt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="620dp"
+        android:text="80%"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HallBooking">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="208dp"
+        android:elevation="10dp"
+        android:text="@string/hallbookingtxt"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.timqi.sectorprogressview.ColorfulRingProgressView
+        android:id="@+id/crpv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="236dp"
+        app:bgColor="@color/background"
+        app:fgColorEnd="@color/colorAccent"
+        app:fgColorStart="@color/colorAccent"
+        app:startAngle="0"
+        app:strokeWidth="21dp" />
+
+    <TextView
+        android:id="@+id/percetxtap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="282dp"
+        android:text="65%"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/attendanceimg"
+        android:layout_width="389dp"
+        android:layout_height="484dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="-151dp"
+        android:layout_marginEnd="-63dp"
+        app:srcCompat="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/backbutton"
+        android:onClick="tomainpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:paddingTop="5dp"
+        android:drawableStart="@drawable/back_icon_black"
+        android:drawablePadding="4dp"
+        android:text="@string/backtxt"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hallavatxt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:id="@+id/veenahallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/ventxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/dhanamhallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/dhantxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/ragamhallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="278dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/ragtxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/pallavihallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="94dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/pallltxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/openairhallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="94dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/openairtxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/kalaihallbutt"
+                android:layout_width="124dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="278dp"
+                android:layout_marginTop="94dp"
+                android:background="@drawable/blackbutt"
+                android:text="@string/kalaitxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eventdetailstxt"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginStart="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eventtxt"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="190dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/evenamgettertxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginTop="180dp"
+                android:hint="@string/evtnammetxt"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/starttimetxt"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="230dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/starttimegettertxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginTop="220dp"
+                android:hint="@string/starttimeetxt"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/endtimetxt"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="270dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/endtimegettertxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginTop="260dp"
+                android:hint="@string/endtimegettertxt"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/organisertxt"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/organamegettertxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="153dp"
+                android:layout_marginTop="300dp"
+                android:hint="@string/evtnammetxt"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orgaconttxt"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="350dp"
+                android:layout_marginStart="30dp"/>
+
+            <EditText
+                android:id="@+id/evecontgettertxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="193dp"
+                android:layout_marginTop="340dp"
+                android:hint="@string/evtorcontxt"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <Button
+                android:id="@+id/registerevebutt"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redbutton"
+                android:text="@string/regitbutttxt"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="400dp"
+                android:layout_marginStart="125dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
